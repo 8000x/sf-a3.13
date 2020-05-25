@@ -1,0 +1,227 @@
+@font-face {
+		font-family: 'OpenSans-Regular';
+		src: url('../fonts/OpenSans-Regular.ttf') format('truetype');
+		font-style: normal;
+		font-weight: 400;
+	}
+@font-face {
+		font-family: 'OpenSans-Italic';
+		src: url('../fonts/OpenSans-Italic.ttf') format('truetype');
+		font-style: italic;
+		font-weight: 400;
+	}
+@font-face {
+		font-family: 'OpenSans-SemiBold';
+		src: url('../fonts/OpenSans-SemiBold.ttf') format('truetype');
+		font-style: normal;
+		font-weight:  600;
+	}
+@font-face {
+		font-family: 'OpenSans-Bold';
+		src: url('../fonts/OpenSans-Bold.ttf') format('truetype');
+		font-style: normal;
+		font-weight:  700;
+	}	
+@font-face {
+		font-family: 'OpenSans-ExtraBold';
+		src: url('../fonts/OpenSans-ExtraBold.ttf') format('truetype');
+		font-style: normal;
+		font-weight: 800;
+	}
+body {
+	font-family: OpenSans-Regular, Arial, sans-serif;
+	margin: 0;
+}
+header {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 1250px;
+	min-height: 90px;
+	margin: 0 auto;
+	background-color: rgba(0,0,0,0.8);
+}
+h1 {
+	text-transform: uppercase;
+	font-family: OpenSans-ExtraBold, sans-serif;
+	font-size: 60px;
+	margin: 0px;
+	opacity: 0.9;
+}
+h2 {
+	margin: 0;
+	text-transform: uppercase;
+	font-family: 'OpenSans-Bold', sans-serif;
+	font-size: 42px;
+	opacity: 0.6;
+}
+h3 {
+	font-family: 'OpenSans-SemiBold', sans-serif;
+	font-size: 24px;
+}
+p {
+	font-size: 16px;
+	line-height: 28px;
+	opacity: 0.7;
+}
+
+.main-pageone,
+.main-pagetwo,
+.main-featureproducts,
+.main-team,
+.main-subscribe,
+.main-feedback,
+.main-footer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: flex-start;
+	max-width: 1250px;
+	margin: 0 auto;
+}
+.main-pageone {
+	padding-top: 100px;
+	padding-bottom: 80px;
+}
+.color-pageone {
+	background-color: rgba(0,0,0,0.07);
+}
+.menu-text {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	position: relative;
+	right: 20px;
+}
+.menu-text > a {
+	padding: 41px 33px 30px;
+	color: #e0e0e0;
+	font-family: OpenSans-Bold, Arial, sans-serif;
+	font-size: 14px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.menu-text > a:hover {
+	background-color: #ff3f40;
+}
+
+.button-pageone {
+	display: flex;
+	width: 225px;
+	height: 55px;
+	justify-content: center;
+	align-items: center;
+	font-family: OpenSans-Bold, sans-serif;
+	font-size: 17px;
+	color: white;
+	text-decoration: none;
+	background-color: #ff2d2d;
+	border-radius: 5px;
+}
+.leftside-pageone {
+	margin: 0;
+	width:50%;
+}
+.main-image {
+	display: inline-block;
+	width: 550px;
+	height: auto;
+	box-shadow: 0px 0px 73px rgba(0, 0, 0, 0.4) ;
+}
+.leftside-pagetwo {
+	flex: 1 1 50%;
+	max-width: 50%;
+/*	margin-bottom: 50px;
+	margin-right: 50px;*/
+}
+.button-pagetwo {
+	color: #ff2d2d;
+	display: inline-block;
+	background-color: #ffffff;
+	width: 227px;
+	padding: 16px 0;
+	border: 2px solid #ff2d2d;
+	border-radius: 5px;
+	text-align: center;
+	text-decoration: none;
+}
+.rightside-pagetwo {
+	flex: 1 1;
+	max-width: 50%;
+	display: flex;
+	flex-wrap: wrap;
+}
+.box-pagetwo {
+	flex: 1 1 50%;
+	width: 50%;
+	margin-bottom: 50px;
+}
+.box-pagetwo > h3::before {
+	display: block;
+	width: 41px;
+	height: 41px;
+	margin-bottom: 23px;
+}
+.box-pagetwo > .icon-management::before {
+	content: url('../images/service-1.png');
+}
+
+.box-pagetwo > .icon-ui::before {
+	content: url('../images/service-2.png');
+}
+
+.box-pagetwo > .icon-branding::before {
+	content: url('../images/service-3.png');
+}
+
+.box-pagetwo > .icon-animation::before {
+	content: url('../images/service-4.png');
+}
+.text-featureproducts {
+	width: 100%;
+	text-align: center;
+	margin-bottom: 67px;
+}
+.text-featureproducts > p {
+	margin: 0 auto;
+	max-width: 50%;
+}
+.menu-featureproducts {
+	width: 100%;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-bottom: 60px;
+}
+.menu-featureproducts a {
+	position: relative;
+    left: 45px;
+	color: #000;
+	margin-right: 55px;
+	font-size: 22px;
+	font-family: 'OpenSans-SemiBold';
+	text-transform: uppercase;
+	text-decoration: none;
+	opacity: 0.7;
+}
+.menu-featureproducts a:hover {
+	color: #ff3f40;
+}
+.img-products {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.img-products img {
+	flex: 1 1 24%;
+	min-width: 250px;
+	max-width: 299px;
+	height: 299px;
+	margin-bottom: 18px;
+	object-fit: cover;
+}
